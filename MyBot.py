@@ -1,3 +1,4 @@
+# coding=utf-8
 import hlt
 from hlt import NORTH, EAST, SOUTH, WEST, STILL, Move, Square
 
