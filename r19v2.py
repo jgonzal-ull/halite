@@ -250,6 +250,8 @@ for l in lines:
 # Grabar el fichero de salida xml
 tree = etree.ElementTree(root)
 
+
+
 # Creo el nombre del fichero de salida.
 t = fichero.split(os.sep)
 fset = t[len(t) - 1].split('.')
