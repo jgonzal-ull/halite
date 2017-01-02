@@ -4,8 +4,6 @@ from hlt import NORTH, EAST, SOUTH, WEST, STILL, Move, Square
 myID, game_map = hlt.get_init()
 hlt.send_init("MyPythonBot")
 
-
-
 def move_to_min(sq):
     global game_map
     minimo = 1000
@@ -15,7 +13,8 @@ def move_to_min(sq):
     if sq.strength < 10:           # El cuadrado está vacío o es demasiado pequeño
         return(Move(sq, STILL))
 
-    radio = int(min((game_map.width, game_map.height)) / 4)
+
+    radio = int(min((game_map.width, game_map.height)) / 2)
 
     while minimo == 1000 and distancia < radio :
         vecinos = game_map.neighbors(sq, distancia)
